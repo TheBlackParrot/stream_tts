@@ -1,0 +1,11 @@
+91,93c91,96
+<         wav_file.setframerate(self.config.sample_rate)
+<         wav_file.setsampwidth(2)  # 16-bit
+<         wav_file.setnchannels(1)  # mono
+---
+>         try:
+>             wav_file.setframerate(self.config.sample_rate)
+>             wav_file.setsampwidth(2)  # 16-bit
+>             wav_file.setnchannels(1)  # mono
+>         except:
+>             pass

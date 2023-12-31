@@ -1,0 +1,346 @@
+{
+	"high": [
+		{
+			"speaker_id": 777,
+			"noise_scale": 0.83,
+			"length_scale": 0.97,
+			"noise_w": 0.72,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 325,
+			"noise_scale": 0.5,
+			"length_scale": 1.275,
+			"noise_w": 0.6,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 727,
+			"noise_scale": 0.8,
+			"length_scale": 1.1,
+			"noise_w": 0.25,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 420,
+			"noise_scale": 0.5,
+			"length_scale": 1.2,
+			"noise_w": 0.4,
+			"sentence_silence": 0.55
+		},
+		{
+			"speaker_id": 439,
+			"noise_scale": 0.8,
+			"length_scale": 1.3,
+			"noise_w": 0.35,
+			"sentence_silence": 0.6
+		},
+		{
+			"speaker_id": 40,
+			"noise_scale": 0.8,
+			"length_scale": 1.15,
+			"noise_w": 0.5,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 80,
+			"noise_scale": 0.75,
+			"length_scale": 1.35,
+			"noise_w": 0.3,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 100,
+			"noise_scale": 0.9,
+			"length_scale": 1.25,
+			"noise_w": 0.4,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 101,
+			"noise_scale": 0.9,
+			"length_scale": 1.15,
+			"noise_w": 0.5,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 345,
+			"noise_scale": 0.8,
+			"length_scale": 0.85,
+			"noise_w": 0.4,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 125,
+			"noise_scale": 0.85,
+			"length_scale": 1.2,
+			"noise_w": 0.2,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 150,
+			"noise_scale": 0.33,
+			"length_scale": 1.15,
+			"noise_w": 0.7,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 250,
+			"noise_scale": 0.8,
+			"length_scale": 0.85,
+			"noise_w": 0.3,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 384,
+			"noise_scale": 0.97,
+			"length_scale": 1.1,
+			"noise_w": 0.15,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 768,
+			"noise_scale": 0.5,
+			"length_scale": 1.35,
+			"noise_w": 0.1,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 444,
+			"noise_scale": 0.8,
+			"length_scale": 0.9,
+			"noise_w": 0.4,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 144,
+			"noise_scale": 0.85,
+			"length_scale": 1.2,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 77,
+			"noise_scale": 0.85,
+			"length_scale": 1.2,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5
+		}
+	],
+
+	"medium": [
+		{
+			"speaker_id": 333,
+			"noise_scale": 0.4,
+			"length_scale": 1.25,
+			"noise_w": 0.3,
+			"sentence_silence": 0.6
+		},
+		{
+			"speaker_id": 2,
+			"noise_scale": 0.2,
+			"length_scale": 1.35,
+			"noise_w": 0.05,
+			"sentence_silence": 0.6
+		},
+		{
+			"speaker_id": 17,
+			"noise_scale": 0.8,
+			"length_scale": 1.33,
+			"noise_w": 0.125,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 696,
+			"noise_scale": 0.95,
+			"length_scale": 1.25,
+			"noise_w": 0.2,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 24,
+			"noise_scale": 0.67,
+			"length_scale": 1.15,
+			"noise_w": 0.2,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 96,
+			"noise_scale": 0.45,
+			"length_scale": 1.3,
+			"noise_w": 0.3,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 417,
+			"noise_scale": 0.67,
+			"length_scale": 1,
+			"noise_w": 0.33,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 391,
+			"noise_scale": 0.67,
+			"length_scale": 1.33,
+			"noise_w": 0.33,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 893,
+			"noise_scale": 0.6,
+			"length_scale": 1.2,
+			"noise_w": 0.4,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 75,
+			"noise_scale": 0.85,
+			"length_scale": 1.2,
+			"noise_w": 0.25,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 26,
+			"noise_scale": 0.6,
+			"length_scale": 1.05,
+			"noise_w": 0.1,
+			"sentence_silence": 0.5
+		}
+	],
+
+	"low": [
+		{
+			"speaker_id": 500,
+			"noise_scale": 0.3,
+			"length_scale": 1.35,
+			"noise_w": 0.12,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 666,
+			"noise_scale": 0.9,
+			"length_scale": 1.1,
+			"noise_w": 0.25,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 50,
+			"noise_scale": 0.2,
+			"length_scale": 1.35,
+			"noise_w": 0.05,
+			"sentence_silence": 0.6
+		},
+		{
+			"speaker_id": 90,
+			"noise_scale": 0.25,
+			"length_scale": 1.3,
+			"noise_w": 0.1,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 92,
+			"noise_scale": 0.33,
+			"length_scale": 1.5,
+			"noise_w": 0.33,
+			"sentence_silence": 0.65
+		},
+		{
+			"speaker_id": 27,
+			"noise_scale": 0.2,
+			"length_scale": 1.4,
+			"noise_w": 0.25,
+			"sentence_silence": 0.55
+		},
+		{
+			"speaker_id": 222,
+			"noise_scale": 0.95,
+			"length_scale": 1.2,
+			"noise_w": 0.5,
+			"sentence_silence": 0.65
+		},
+		{
+			"speaker_id": 782,
+			"noise_scale": 0.4,
+			"length_scale": 1.1,
+			"noise_w": 0.25,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 269,
+			"noise_scale": 0.45,
+			"length_scale": 1.2,
+			"noise_w": 0.25,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 16,
+			"noise_scale": 0.5,
+			"length_scale": 1.37,
+			"noise_w": 0.3,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 413,
+			"noise_scale": 0.6,
+			"length_scale": 0.8,
+			"noise_w": 0.4,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 814,
+			"noise_scale": 0.65,
+			"length_scale": 1.1,
+			"noise_w": 0.4,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 899,
+			"noise_scale": 0.75,
+			"length_scale": 1.1,
+			"noise_w": 0.2,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 200,
+			"noise_scale": 0.6,
+			"length_scale": 1.45,
+			"noise_w": 0.2,
+			"sentence_silence": 0.45
+		},
+		{
+			"speaker_id": 225,
+			"noise_scale": 0.9,
+			"length_scale": 1.4,
+			"noise_w": 0.2,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 512,
+			"noise_scale": 0.5,
+			"length_scale": 1.1,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4
+		},
+		{
+			"speaker_id": 78,
+			"noise_scale": 0.6,
+			"length_scale": 1.25,
+			"noise_w": 0.2,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 104,
+			"noise_scale": 0.7,
+			"length_scale": 1.3,
+			"noise_w": 0.25,
+			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 609,
+			"noise_scale": 0.8,
+			"length_scale": 1,
+			"noise_w": 0.15,
+			"sentence_silence": 0.45
+		}
+	]
+}

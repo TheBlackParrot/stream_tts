@@ -1,0 +1,16 @@
+#!/bin/bash
+dir="/tmp/tts_output"
+output_dir="/tmp/tts_output_ogg"
+
+mkdir -p "$output_dir"
+
+for file in $(find "$dir" -type f -name "*.wav"); do
+	relative_path="${file#*$dir}"
+	minusExt="${relative_path%.*}"
+	folder=${minusExt%/*}
+
+	mkdir -p "$output_dir/$folder"
+
+	echo "$file"
+	ffmpeg -i "$file" -codec:a libvorbis -b:a 24k -ar 22050 -ac 1 -loglevel quiet "$output_dir$minusExt.ogg"
+done

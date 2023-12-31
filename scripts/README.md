@@ -1,0 +1,1 @@
+These are just some sample-generating scripts so my chat can hear what all available voices sound like. Sorry they're all in different languages, I just used what was easiest to think in at the time (it didn't need to be pretty w/e)

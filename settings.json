@@ -1,0 +1,25 @@
+{
+	"model": {
+		"path": "venv/en_US-libritts_r-medium.onnx",
+		"config": "venv/en_US-libritts_r-medium.onnx.json"
+	},
+
+	"http": {
+		"ip": "127.0.0.1",
+		"port": 10000
+	},
+
+	"tts": {
+		"name_voice": {
+			"speaker_id": 500,
+			"noise_scale": 0.2,
+			"length_scale": 1.4,
+			"noise_w": 0.1,
+			"sentence_silence": 0.33
+		}
+	},
+
+	"cache": {
+		"expire_after": 300
+	}
+}
