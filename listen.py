@@ -15,22 +15,6 @@ settings = None
 with open("settings.json", "r") as settingsFile:
     settings = json.load(settingsFile)
 
-dictReplace = None
-with open("dict.json", "r") as dictFile:
-    dictReplace = json.load(dictFile)
-faceReplace = None
-with open("faces.json", "r") as facesFile:
-    faceReplace = json.load(facesFile)
-symReplace = None
-with open("symbols.json", "r") as symFile:
-    symReplace = json.load(symFile)
-voiceArgs = None
-with open("tts_voices.json", "r") as voiceArgsFile:
-    voiceArgs = json.load(voiceArgsFile)
-ttsStuff = None
-with open("viewer_data.json", "r") as ttsStuffFile:
-    ttsStuff = json.load(ttsStuffFile)
-
 voice = PiperVoice.load(settings['model']['path'], config_path=settings['model']['config'])
 
 pronouns = {}
@@ -38,19 +22,20 @@ cache = {}
 
 def getPronouns(user):
     if user in pronouns:
-        return pronouns[user]
+        if time() < pronouns[user][1] + 86400:
+            return pronouns[user][0]
 
     req = requests.get("https://pronouns.alejo.io/api/users/" + user)
     if len(req.text) > 0:
         reqJSON = json.loads(req.text)
         if len(reqJSON) > 0:
-            pronouns[user] = reqJSON[0]["pronoun_id"]
+            pronouns[user] = [reqJSON[0]["pronoun_id"], time()]
         else:
-            pronouns[user] = ""
+            pronouns[user] = ["", time()]
     else:
-        pronouns[user] = ""
+        pronouns[user] = ["", time()]
 
-    return pronouns[user]
+    return pronouns[user][0]
 
 def cleanCache():
     ts = time()
@@ -69,6 +54,25 @@ class MyServer(BaseHTTPRequestHandler):
         self.wfile.write(audio)
 
     def do_GET(self):
+        dictReplace = None
+        with open("dict.json", "r") as dictFile:
+            dictReplace = json.load(dictFile)
+        faceReplace = None
+        with open("faces.json", "r") as facesFile:
+            faceReplace = json.load(facesFile)
+        symReplace = None
+        with open("symbols.json", "r") as symFile:
+            symReplace = json.load(symFile)
+        voiceArgs = None
+        with open("tts_voices.json", "r") as voiceArgsFile:
+            voiceArgs = json.load(voiceArgsFile)
+        ttsStuff = None
+        with open("viewer_data.json", "r") as ttsStuffFile:
+            ttsStuff = json.load(ttsStuffFile)
+        soundList = None
+        with open("sounds.json", "r") as soundListFile:
+            soundList = json.load(soundListFile)
+
         main_url = "http://" + settings["http"]["ip"] + ":" + str(settings["http"]["port"]) + self.path
         url_parts = urllib.parse.urlparse(main_url)
         query_parts = urllib.parse.parse_qs(url_parts.query)
@@ -205,11 +209,41 @@ class MyServer(BaseHTTPRequestHandler):
 
         with io.BytesIO() as wavIO:
             with wave.open(wavIO, "wb") as audio_bytes:
+                try:
+                    audio_bytes.setframerate(22050)
+                    audio_bytes.setsampwidth(2)
+                    audio_bytes.setnchannels(1)
+                except:
+                    pass
+
                 for sentence in currentTTSData['say'].split("."):
                     if sentence == "":
                         continue
-                    print("synthesizing " + sentence)
-                    voice.synthesize(text=sentence, wav_file=audio_bytes, **synthesizeArgs)
+
+                    output = []
+                    outputPart = {"data": [], "type": "tts"}
+                    words = sentence.split(" ")
+                    for word in words:
+                        if word in soundList:
+                            if outputPart["data"] != "":
+                                output.append(outputPart)
+                            output.append({"data": soundList[word], "type": "sound"})
+                            outputPart = {"data": [], "type": "tts"}
+                        else:
+                            outputPart["data"].append(word)
+                    output.append(outputPart)
+
+                    for part in output:
+                        if part["type"] == "sound":
+                            with wave.open(part["data"], "rb") as sound_data:
+                                audio_bytes.writeframes(bytes(sound_data.readframes(sound_data.getnframes())))
+                        else:
+                            synthesizeData = " ".join(part["data"])
+                            if synthesizeData.strip() == "":
+                                continue
+                            print("synthesizing " + synthesizeData)
+                            voice.synthesize(text=synthesizeData, wav_file=audio_bytes, **synthesizeArgs)
+
                     silenceLength = int(synthesizeArgs['sentence_silence'] * 11025)
                     silenceBuffer = bytes(bytearray([0x00, 0x00]) * silenceLength)
                     audio_bytes.writeframes(silenceBuffer)

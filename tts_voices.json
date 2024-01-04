@@ -205,6 +205,13 @@
 			"length_scale": 1.05,
 			"noise_w": 0.1,
 			"sentence_silence": 0.5
+		},
+		{
+			"speaker_id": 711,
+			"noise_scale": 0.3,
+			"length_scale": 1.2,
+			"noise_w": 0.15,
+			"sentence_silence": 0.4
 		}
 	],
 

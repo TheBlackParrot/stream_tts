@@ -1,0 +1,11 @@
+{
+	"(gunload)": "sounds/gun_load.wav",
+	"(gunfire)": "sounds/gun_fire.wav",
+	"(cashregister)": "sounds/cash_register.wav",
+	"(punch)": "sounds/punch.wav",
+	"(slap)": "sounds/slap.wav",
+	"(meow)": "sounds/meow.wav",
+	"(wompwomp)": "sounds/womp_womp.wav",
+	"(wink)": "sounds/wink.wav",
+	"(doorbell)": "sounds/doorbell.wav"
+}
