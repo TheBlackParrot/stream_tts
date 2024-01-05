@@ -7,5 +7,21 @@
 	"(meow)": "sounds/meow.wav",
 	"(wompwomp)": "sounds/womp_womp.wav",
 	"(wink)": "sounds/wink.wav",
-	"(doorbell)": "sounds/doorbell.wav"
+	"(doorbell)": "sounds/doorbell.wav",
+	"(crash)": "sounds/car_crash.wav",
+	"(bleep)": "sounds/bleep_short.wav",
+	"(medbleep)": "sounds/bleep_med.wav",
+	"(longbleep)": "sounds/bleep_long.wav",
+	"(knocking)": "sounds/knocking.wav",
+	"(scratch)": "sounds/record_scratch.wav",
+	"(whistle)": "sounds/whistle.wav",
+	"(caw)": "sounds/caw.wav",
+	"(bark)": "sounds/bark.wav",
+	"(thunder)": "sounds/thunder.wav",
+	"(drumroll)": "sounds/snare_roll.wav",
+	"(harpstrum)": "sounds/harp_strum.wav",
+	"(boing)": "sounds/harp_strum.wav",
+	"(dooropen)": "sounds/door_open.wav",
+	"(doorslam)": "sounds/door_slam.wav",
+	"(honk)": "sounds/honk.wav"
 }

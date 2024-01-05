@@ -45,6 +45,14 @@ def cleanCache():
         if ts > cache[_hash]['timestamp'] + settings['cache']['expire_after']:
             cache.pop(_hash, None)
 
+def stripNonASCII(string):
+    output = ""
+    for character in string:
+        val = ord(character)
+        if val >= 32 and val <= 126:
+            output += character
+    return output
+
 class MyServer(BaseHTTPRequestHandler):
     def writeAudio(self, audio):
         self.send_response(200)
@@ -80,8 +88,8 @@ class MyServer(BaseHTTPRequestHandler):
         path_parts = self.path[1:].split("/")[:-1]
 
         _type = path_parts[0].lower()
-        _nameCaps = path_parts[1]
-        _name = _nameCaps.lower()
+        _nameCaps = stripNonASCII(urllib.parse.unquote(path_parts[1]))
+        _name = urllib.parse.unquote(path_parts[1]).lower()
         _data = " ".join([urllib.parse.unquote(str(item)) for item in path_parts[2:]])
         md5hash = hashlib.md5((_name + _data).encode("utf-8")).hexdigest()
 
