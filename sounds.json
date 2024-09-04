@@ -1,27 +1,137 @@
 {
-	"(gunload)": "sounds/gun_load.wav",
-	"(gunfire)": "sounds/gun_fire.wav",
-	"(cashregister)": "sounds/cash_register.wav",
-	"(punch)": "sounds/punch.wav",
-	"(slap)": "sounds/slap.wav",
-	"(meow)": "sounds/meow.wav",
-	"(wompwomp)": "sounds/womp_womp.wav",
-	"(wink)": "sounds/wink.wav",
-	"(doorbell)": "sounds/doorbell.wav",
-	"(crash)": "sounds/car_crash.wav",
-	"(bleep)": "sounds/bleep_short.wav",
-	"(medbleep)": "sounds/bleep_med.wav",
-	"(longbleep)": "sounds/bleep_long.wav",
-	"(knocking)": "sounds/knocking.wav",
-	"(scratch)": "sounds/record_scratch.wav",
-	"(whistle)": "sounds/whistle.wav",
-	"(caw)": "sounds/caw.wav",
-	"(bark)": "sounds/bark.wav",
-	"(thunder)": "sounds/thunder.wav",
-	"(drumroll)": "sounds/snare_roll.wav",
-	"(harpstrum)": "sounds/harp_strum.wav",
-	"(boing)": "sounds/harp_strum.wav",
-	"(dooropen)": "sounds/door_open.wav",
-	"(doorslam)": "sounds/door_slam.wav",
-	"(honk)": "sounds/honk.wav"
+	"(gunload)": [
+		"sounds/gun_load.wav",
+		"sounds/custom/misc/DS_VP_fx_foley_one_shot_twist_gun_reload.wav",
+		"sounds/custom/misc/FF_AF_foley_gun_reloads_brown.wav"
+	],
+	"(gunfire)": [
+		"sounds/gun_fire.wav"
+	],
+	"(cashregister)": [
+		"sounds/cash_register.wav"
+	],
+	"(punch)": [
+		"sounds/punch.wav"
+	],
+	"(slap)": [
+		"sounds/slap.wav"
+	],
+	"(meow)": [
+		"sounds/meow.wav",
+		"sounds/custom/meow/CatMeow_S08AN.48.wav",
+		"sounds/custom/meow/CatMeow_SFXB.203.wav",
+		"sounds/custom/meow/FF_AS_cat_meow_prior_trill.wav",
+		"sounds/custom/meow/FF_AS_cat_meow_textbook_alt.wav"
+	],
+	"(wompwomp)": [
+		"sounds/womp_womp.wav"
+	],
+	"(wink)": [
+		"sounds/wink.wav"
+	],
+	"(doorbell)": [
+		"sounds/doorbell.wav",
+		"sounds/custom/misc/PSE_EFV1_FX_One_Shot_Foley_Doorbell_Dingdong.wav"
+	],
+	"(carcrash)": [
+		"sounds/car_crash.wav"
+	],
+	"(bleep)": [
+		"sounds/bleep_short.wav"
+	],
+	"(medbleep)": [
+		"sounds/bleep_med.wav"
+	],
+	"(longbleep)": [
+		"sounds/bleep_long.wav"
+	],
+	"(knocking)": [
+		"sounds/knocking.wav",
+		"sounds/custom/misc/FF_WP_foley_office_door_knock_quick.wav"
+	],
+	"(scratch)": [
+		"sounds/record_scratch.wav"
+	],
+	"(whistle)": [
+		"sounds/whistle.wav"
+	],
+	"(caw)": [
+		"sounds/caw.wav"
+	],
+	"(bark)": [
+		"sounds/bark.wav",
+		"sounds/custom/bark/DogBark_BW.2098.wav",
+		"sounds/custom/bark/DogBark_BW.62872.wav",
+		"sounds/custom/bark/DogBark_BW.62874.wav",
+		"sounds/custom/bark/DogBark_BW.62875.wav",
+		"sounds/custom/bark/ESM_Dog_Bark_2_Organic_Element_Sound_Source_Animal_Creature_Medium_Size_Hunting_Small_Game_Pup.wav",
+		"sounds/custom/bark/ESM_FG_animal_one_shot_dog_hound_bark_short_deep_1.wav",
+		"sounds/custom/bark/EX_HC_fx_ambience_dog_woof_cricket_wet-01.wav",
+		"sounds/custom/bark/EX_HC_fx_ambience_dog_woof_cricket_wet-02.wav",
+		"sounds/custom/bark/EX_HC_fx_ambience_dog_woof_cricket_wet-03.wav",
+		"sounds/custom/bark/EX_HC_fx_ambience_dog_woof_cricket_wet-04.wav",
+		"sounds/custom/bark/EX_HC_fx_ambience_dog_woof_cricket_wet-05.wav",
+		"sounds/custom/bark/EX_HC_fx_ambience_dog_woof_cricket_wet-06.wav",
+		"sounds/custom/bark/EX_HC_fx_ambience_dog_woof_cricket_wet-07.wav",
+		"sounds/custom/bark/NICK_BAILEY_fx_dog_bark.wav",
+		"sounds/custom/bark/shs_oat_dog_bark_one_shot_1.wav"
+	],
+	"(thunder)": [
+		"sounds/thunder.wav"
+	],
+	"(drumroll)": [
+		"sounds/snare_roll.wav"
+	],
+	"(harpstrum)": [
+		"sounds/harp_strum.wav"
+	],
+	"(boing)": [
+		"sounds/boing.wav"
+	],
+	"(dooropen)": [
+		"sounds/door_open.wav"
+	],
+	"(doorslam)": [
+		"sounds/door_slam.wav"
+	],
+	"(honk)": [
+		"sounds/honk.wav"
+	],
+	"(pop)": [
+		"sounds/custom/misc/DS_CAMR2_foley_mouth_one_shot_pop_roomy.wav"
+	],
+	"(shatter)": [
+		"sounds/custom/misc/DS_VP_fx_foley_one_shot_juicy_glass_shatter.wav"
+	],
+	"(woosh)": [
+		"sounds/custom/woosh/FF_AF_foley_punch_whoosh_gold.wav",
+		"sounds/custom/woosh/SwordWhipCourtSword_BW.59_2.wav",
+		"sounds/custom/woosh/WhipWhoosh_AP1.1128.wav",
+		"sounds/custom/woosh/WhipWhoosh_SFXB.1075.wav",
+		"sounds/custom/woosh/WhipWhooshSwoosh_S011FO.991.wav"
+	],
+	"(spoonbend)": [
+		"sounds/custom/misc/FF_CF_foley_spoon_bend_red.wav"
+	],
+	"(infosign)": [
+		"sounds/custom/misc/FF_MT_airplane_foley_seatbelt_sign_dry.wav"
+	],
+	"(pageturn)": [
+		"sounds/custom/misc/PaperbackBookPage_BW.9551.wav"
+	],
+	"(bodyfall)": [
+		"sounds/custom/misc/SPLC-4874_FX_Oneshot_Foley_Body_Fall_Deep.wav"
+	],
+	"(sighdisgust)": [
+		"sounds/custom/sigh/KRYSTAYOUNGS_vocal_sigh_disgust_emotion.wav"
+	],
+	"(sigh)": [
+		"sounds/custom/sigh/HumanSighAngry_S08HU.451.wav"
+	],
+	"(sighangry)": [
+		"sounds/custom/sigh/ESM_Character_Calvin_Sigh_6_Male_Human_Voice_Over_Vocal_English_Middle_Age_Adult_Mature.wav"
+	],
+	"(whipcrack)": [
+		"sounds/custom/misc/BullwhipCrack_BW.54898.wav"
+	]
 }

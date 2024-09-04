@@ -1,7 +1,7 @@
 {
 	"theblackparrot": {
 		"pronunciation": "the black parrot",
-		"voice": ["low", 413]
+		"voice": ["low", 413, 0]
 	},
 	"buttsbot": {"pronunciation": "butts bot"}
 }

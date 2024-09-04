@@ -5,13 +5,16 @@ import wave
 from piper import PiperVoice
 
 settings = None
-with open("../settings.json", "r") as settingsFile:
+with open("settings.json", "r") as settingsFile:
     settings = json.load(settingsFile)
 voiceArgs = None
-with open("../tts_voices.json", "r") as voiceArgsFile:
+with open("tts_voices.json", "r") as voiceArgsFile:
     voiceArgs = json.load(voiceArgsFile)
 
-voice = PiperVoice.load("../" + settings['model']['path'], config_path="../" + settings['model']['config'])
+voices = []
+for modelSettings in settings['models']:
+    print("loading model %s" % modelSettings['path'])
+    voices.append(PiperVoice.load(modelSettings['path'], config_path=modelSettings['config']))
 
 examplePrompts = []
 examplePromptFiles = [
@@ -31,12 +34,15 @@ for filename in examplePromptFiles:
 
 for promptData in examplePrompts:
     for pitch in voiceArgs:
-        for voiceData in voiceArgs[pitch]:            
-            filename = "/tmp/tts_output/" + pitch + "-" + str(voiceData['speaker_id']) + "/" + promptData['title'] + ".wav"
+        for voiceData in voiceArgs[pitch]:     
+            activeModel = voiceData['model']
+            filename = f"/tmp/tts_output/{pitch}-{voiceData['speaker_id']}-{activeModel}/{promptData['title']}.wav"
 
             if not os.path.isdir(os.path.dirname(filename)):
                 os.mkdir(os.path.dirname(filename))
 
             with wave.open(filename, "wb") as waveFile:
-                print("synthesizing prompt " + promptData['title'] + " with voice " + pitch + "-" + str(voiceData['speaker_id']))
-                voice.synthesize(text=promptData['text'], wav_file=waveFile, **voiceData)
+                print(f"synthesizing prompt {promptData['title']} with voice {pitch}-{voiceData['speaker_id']} using model {activeModel}");
+                voiceDataFixed = dict(voiceData)
+                del voiceDataFixed['model']
+                voices[activeModel].synthesize(text=promptData['text'], wav_file=waveFile, **voiceDataFixed)

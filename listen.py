@@ -6,6 +6,7 @@ import json
 import urllib.parse
 import requests
 import hashlib
+import random
 from time import time
 from num2words import num2words
 from piper import PiperVoice
@@ -15,7 +16,10 @@ settings = None
 with open("settings.json", "r") as settingsFile:
     settings = json.load(settingsFile)
 
-voice = PiperVoice.load(settings['model']['path'], config_path=settings['model']['config'])
+voices = []
+for modelSettings in settings['models']:
+    print("loading model %s" % modelSettings['path'])
+    voices.append(PiperVoice.load(modelSettings['path'], config_path=modelSettings['config']))
 
 pronouns = {}
 cache = {}
@@ -88,8 +92,8 @@ class MyServer(BaseHTTPRequestHandler):
         path_parts = self.path[1:].split("/")[:-1]
 
         _type = path_parts[0].lower()
-        _nameCaps = stripNonASCII(urllib.parse.unquote(path_parts[1]))
-        _name = urllib.parse.unquote(path_parts[1]).lower()
+        _nameCaps = stripNonASCII(urllib.parse.unquote(path_parts[1].split(",")[1]))
+        _name = urllib.parse.unquote(path_parts[1].split(",")[0]).lower()
         _data = " ".join([urllib.parse.unquote(str(item)) for item in path_parts[2:]])
         md5hash = hashlib.md5((_name + _data).encode("utf-8")).hexdigest()
 
@@ -105,6 +109,7 @@ class MyServer(BaseHTTPRequestHandler):
         voiceOpts = []
         synthesizeArgs = settings['tts']['name_voice']
         userPronouns = ""
+        activeModel = synthesizeArgs['model']
 
         if _type == "name":
             if _name in ttsStuff:
@@ -132,6 +137,8 @@ class MyServer(BaseHTTPRequestHandler):
                     name_parts_spaced.append(" ".join(re.split('(?<=.)(?=[A-Z])', item)).lower())
 
                 currentTTSData["say"] = " ".join([str(item) for item in name_parts_spaced])
+                if len(currentTTSData["say"]) <= 3:
+                    currentTTSData["say"] = _name
         if _type == "msg":
             userPronouns = getPronouns(_name)
 
@@ -199,14 +206,16 @@ class MyServer(BaseHTTPRequestHandler):
                     voiceOpts.append(item)
 
             synthesizeArgs = voiceOpts[int.from_bytes(bytes(_name.encode("utf-8")), byteorder='big') % len(voiceOpts)]
+            activeModel = synthesizeArgs["model"]
 
             if _name in ttsStuff:
                 if "voice" in ttsStuff[_name]:
                     pitch = ttsStuff[_name]["voice"][0]
                     speaker = ttsStuff[_name]["voice"][1]
+                    activeModel = ttsStuff[_name]["voice"][2]
 
                     for voiceData in voiceArgs[pitch]:
-                        if voiceData["speaker_id"] == speaker:
+                        if voiceData["speaker_id"] == speaker and voiceData["model"] == activeModel:
                             print("forcing speaker to " + pitch + "-" + str(voiceData["speaker_id"]))
                             synthesizeArgs = voiceData
 
@@ -232,11 +241,25 @@ class MyServer(BaseHTTPRequestHandler):
                     outputPart = {"data": [], "type": "tts"}
                     words = sentence.split(" ")
                     for word in words:
+                        pauseParts = word.split(",")
                         if word in soundList:
                             if outputPart["data"] != "":
                                 output.append(outputPart)
-                            output.append({"data": soundList[word], "type": "sound"})
+                            output.append({"data": random.choice(soundList[word]), "type": "sound"})
                             outputPart = {"data": [], "type": "tts"}
+                        elif pauseParts[0] == "(pause":
+                            try:
+                                pauseAmount = int(re.sub(r'[^0-9]', "", pauseParts[1]))
+                            except:
+                                pass
+                            else:
+                                if pauseAmount > 0:
+                                    if pauseAmount > 8:
+                                        pauseAmount = 8
+                                    if outputPart["data"] != "":
+                                        output.append(outputPart)
+                                    output.append({"data": pauseAmount, "type": "pause"})
+                                    outputPart = {"data": [], "type": "tts"}
                         else:
                             outputPart["data"].append(word)
                     output.append(outputPart)
@@ -245,12 +268,18 @@ class MyServer(BaseHTTPRequestHandler):
                         if part["type"] == "sound":
                             with wave.open(part["data"], "rb") as sound_data:
                                 audio_bytes.writeframes(bytes(sound_data.readframes(sound_data.getnframes())))
+                        elif part["type"] == "pause":
+                            pauseLength = int(part["data"] * 22050)
+                            pauseBuffer = bytes(bytearray([0x00, 0x00]) * pauseLength)
+                            audio_bytes.writeframes(pauseBuffer)
                         else:
                             synthesizeData = " ".join(part["data"])
                             if synthesizeData.strip() == "":
                                 continue
                             print("synthesizing " + synthesizeData)
-                            voice.synthesize(text=synthesizeData, wav_file=audio_bytes, **synthesizeArgs)
+                            synthesizeArgsFixed = dict(synthesizeArgs)
+                            del synthesizeArgsFixed['model']
+                            voices[activeModel].synthesize(text=synthesizeData, wav_file=audio_bytes, **synthesizeArgsFixed)
 
                     silenceLength = int(synthesizeArgs['sentence_silence'] * 11025)
                     silenceBuffer = bytes(bytearray([0x00, 0x00]) * silenceLength)

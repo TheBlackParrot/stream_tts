@@ -1,8 +1,30 @@
 {
-	"model": {
-		"path": "venv/en_US-libritts_r-medium.onnx",
-		"config": "venv/en_US-libritts_r-medium.onnx.json"
-	},
+	"models": [
+		{
+			"path": "venv/en_US-libritts_r-medium.onnx",
+			"config": "venv/en_US-libritts_r-medium.onnx.json"
+		},
+
+		{
+			"path": "venv/en_US-libritts-high.onnx",
+			"config": "venv/en_US-libritts-high.onnx.json"
+		},
+
+		{
+			"path": "venv/en_US-arctic-medium.onnx",
+			"config": "venv/en_US-arctic-medium.onnx.json"
+		},
+
+		{
+			"path": "venv/en_GB-vctk-medium.onnx",
+			"config": "venv/en_GB-vctk-medium.onnx.json"
+		},
+
+		{
+			"path": "venv/en_GB-aru-medium.onnx",
+			"config": "venv/en_GB-aru-medium.onnx.json"
+		}
+	],
 
 	"http": {
 		"ip": "127.0.0.1",
@@ -15,11 +37,12 @@
 			"noise_scale": 0.2,
 			"length_scale": 1.4,
 			"noise_w": 0.1,
-			"sentence_silence": 0.33
+			"sentence_silence": 0.33,
+			"model": 0
 		}
 	},
 
 	"cache": {
-		"expire_after": 300
+		"expire_after": 600
 	}
 }

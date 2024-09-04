@@ -5,126 +5,344 @@
 			"noise_scale": 0.83,
 			"length_scale": 0.97,
 			"noise_w": 0.72,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 325,
 			"noise_scale": 0.5,
 			"length_scale": 1.275,
 			"noise_w": 0.6,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 727,
 			"noise_scale": 0.8,
 			"length_scale": 1.1,
 			"noise_w": 0.25,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 420,
 			"noise_scale": 0.5,
 			"length_scale": 1.2,
 			"noise_w": 0.4,
-			"sentence_silence": 0.55
+			"sentence_silence": 0.55,
+			"model": 0
 		},
 		{
 			"speaker_id": 439,
 			"noise_scale": 0.8,
 			"length_scale": 1.3,
 			"noise_w": 0.35,
-			"sentence_silence": 0.6
+			"sentence_silence": 0.6,
+			"model": 0
 		},
 		{
 			"speaker_id": 40,
 			"noise_scale": 0.8,
 			"length_scale": 1.15,
 			"noise_w": 0.5,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 80,
 			"noise_scale": 0.75,
 			"length_scale": 1.35,
 			"noise_w": 0.3,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 100,
 			"noise_scale": 0.9,
 			"length_scale": 1.25,
 			"noise_w": 0.4,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 101,
 			"noise_scale": 0.9,
 			"length_scale": 1.15,
 			"noise_w": 0.5,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 345,
 			"noise_scale": 0.8,
 			"length_scale": 0.85,
 			"noise_w": 0.4,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 125,
 			"noise_scale": 0.85,
 			"length_scale": 1.2,
 			"noise_w": 0.2,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 150,
 			"noise_scale": 0.33,
 			"length_scale": 1.15,
 			"noise_w": 0.7,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 250,
 			"noise_scale": 0.8,
 			"length_scale": 0.85,
 			"noise_w": 0.3,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 384,
 			"noise_scale": 0.97,
 			"length_scale": 1.1,
 			"noise_w": 0.15,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 768,
 			"noise_scale": 0.5,
 			"length_scale": 1.35,
 			"noise_w": 0.1,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 444,
 			"noise_scale": 0.8,
 			"length_scale": 0.9,
 			"noise_w": 0.4,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 144,
 			"noise_scale": 0.85,
 			"length_scale": 1.2,
 			"noise_w": 0.5,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 77,
 			"noise_scale": 0.85,
 			"length_scale": 1.2,
 			"noise_w": 0.5,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 764,
+			"noise_scale": 0.8,
+			"length_scale": 1.25,
+			"noise_w": 0.27,
+			"sentence_silence": 0.4,
+			"model": 0
+		},
+		{
+			"speaker_id": 707,
+			"noise_scale": 0.67,
+			"length_scale": 1.2,
+			"noise_w": 0.33,
+			"sentence_silence": 0.4,
+			"model": 0
+		},
+		{
+			"speaker_id": 681,
+			"noise_scale": 0.85,
+			"length_scale": 1.25,
+			"noise_w": 0.3,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 625,
+			"noise_scale": 0.4,
+			"length_scale": 1.25,
+			"noise_w": 0.2,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 611,
+			"noise_scale": 0.8,
+			"length_scale": 1.2,
+			"noise_w": 0.15,
+			"sentence_silence": 0.4,
+			"model": 0
+		},
+		{
+			"speaker_id": 493,
+			"noise_scale": 0.5,
+			"length_scale": 1.3,
+			"noise_w": 0.2,
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 376,
+			"noise_scale": 0.25,
+			"length_scale": 1.25,
+			"noise_w": 0.1,
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 307,
+			"noise_scale": 0.45,
+			"length_scale": 1.3,
+			"noise_w": 0.7,
+			"sentence_silence": 0.4,
+			"model": 0
+		},
+		{
+			"speaker_id": 777,
+			"noise_scale": 0.5,
+			"length_scale": 0.97,
+			"noise_w": 0.72,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 79,
+			"noise_scale": 0.5,
+			"length_scale": 1.0,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 292,
+			"noise_scale": 0.6,
+			"length_scale": 1.0,
+			"noise_w": 0.5,
+			"sentence_silence": 0.35,
+			"model": 1
+		},
+		{
+			"speaker_id": 837,
+			"noise_scale": 0.5,
+			"length_scale": 0.95,
+			"noise_w": 0.6,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 699,
+			"noise_scale": 0.33,
+			"length_scale": 0.85,
+			"noise_w": 0.9,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 305,
+			"noise_scale": 0.9,
+			"length_scale": 1.15,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 307,
+			"noise_scale": 0.7,
+			"length_scale": 1.1,
+			"noise_w": 0.25,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 12,
+			"noise_scale": 0.7,
+			"length_scale": 0.85,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 2
+		},
+		{
+			"speaker_id": 88,
+			"noise_scale": 0.4,
+			"length_scale": 1.0,
+			"noise_w": 0.9,
+			"sentence_silence": 0.4,
+			"model": 3
+		},
+		{
+			"speaker_id": 86,
+			"noise_scale": 0.4,
+			"length_scale": 1.0,
+			"noise_w": 0.9,
+			"sentence_silence": 0.4,
+			"model": 3
+		},
+		{
+			"speaker_id": 73,
+			"noise_scale": 0.5,
+			"length_scale": 1.15,
+			"noise_w": 0.8,
+			"sentence_silence": 0.4,
+			"model": 3
+		},
+		{
+			"speaker_id": 10,
+			"noise_scale": 0.5,
+			"length_scale": 1.0,
+			"noise_w": 0.7,
+			"sentence_silence": 0.35,
+			"model": 4
+		},
+		{
+			"speaker_id": 11,
+			"noise_scale": 0.5,
+			"length_scale": 0.85,
+			"noise_w": 0.7,
+			"sentence_silence": 0.1,
+			"model": 4
+		},
+		{
+			"speaker_id": 112,
+			"noise_scale": 0.5,
+			"length_scale": 1.0,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 180,
+			"noise_scale": 0.5,
+			"length_scale": 1.15,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 505,
+			"noise_scale": 0.65,
+			"length_scale": 0.9,
+			"noise_w": 0.35,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 555,
+			"noise_scale": 0.4,
+			"length_scale": 1.2,
+			"noise_w": 0.4,
+			"sentence_silence": 0.5,
+			"model": 1
 		}
 	],
 
@@ -134,84 +352,304 @@
 			"noise_scale": 0.4,
 			"length_scale": 1.25,
 			"noise_w": 0.3,
-			"sentence_silence": 0.6
+			"sentence_silence": 0.6,
+			"model": 0
 		},
 		{
 			"speaker_id": 2,
 			"noise_scale": 0.2,
 			"length_scale": 1.35,
 			"noise_w": 0.05,
-			"sentence_silence": 0.6
+			"sentence_silence": 0.6,
+			"model": 0
 		},
 		{
 			"speaker_id": 17,
 			"noise_scale": 0.8,
 			"length_scale": 1.33,
 			"noise_w": 0.125,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 696,
 			"noise_scale": 0.95,
 			"length_scale": 1.25,
 			"noise_w": 0.2,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 24,
 			"noise_scale": 0.67,
 			"length_scale": 1.15,
 			"noise_w": 0.2,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 96,
 			"noise_scale": 0.45,
 			"length_scale": 1.3,
 			"noise_w": 0.3,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 417,
 			"noise_scale": 0.67,
 			"length_scale": 1,
 			"noise_w": 0.33,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 391,
 			"noise_scale": 0.67,
 			"length_scale": 1.33,
 			"noise_w": 0.33,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 893,
 			"noise_scale": 0.6,
 			"length_scale": 1.2,
 			"noise_w": 0.4,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 75,
 			"noise_scale": 0.85,
 			"length_scale": 1.2,
 			"noise_w": 0.25,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 26,
 			"noise_scale": 0.6,
 			"length_scale": 1.05,
 			"noise_w": 0.1,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 711,
 			"noise_scale": 0.3,
 			"length_scale": 1.2,
 			"noise_w": 0.15,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
+		},
+		{
+			"speaker_id": 722,
+			"noise_scale": 0.45,
+			"length_scale": 1.25,
+			"noise_w": 0.67,
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 638,
+			"noise_scale": 0.5,
+			"length_scale": 1.1,
+			"noise_w": 0.4,
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 480,
+			"noise_scale": 0.7,
+			"length_scale": 1.33,
+			"noise_w": 0.4,
+			"sentence_silence": 0.55,
+			"model": 0
+		},
+		{
+			"speaker_id": 470,
+			"noise_scale": 0.4,
+			"length_scale": 1.25,
+			"noise_w": 0.33,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 383,
+			"noise_scale": 0.8,
+			"length_scale": 1.2,
+			"noise_w": 0.15,
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 382,
+			"noise_scale": 0.25,
+			"length_scale": 1.2,
+			"noise_w": 0.1,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 580,
+			"noise_scale": 0.6,
+			"length_scale": 0.9,
+			"noise_w": 0.7,
+			"sentence_silence": 0.35,
+			"model": 1
+		},
+		{
+			"speaker_id": 825,
+			"noise_scale": 0.4,
+			"length_scale": 0.9,
+			"noise_w": 0.25,
+			"sentence_silence": 0.33,
+			"model": 1
+		},
+		{
+			"speaker_id": 690,
+			"noise_scale": 0.6,
+			"length_scale": 0.85,
+			"noise_w": 0.2,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 447,
+			"noise_scale": 0.6,
+			"length_scale": 1.15,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 5,
+			"noise_scale": 0.6,
+			"length_scale": 0.8,
+			"noise_w": 0.4,
+			"sentence_silence": 0.45,
+			"model": 2
+		},
+		{
+			"speaker_id": 6,
+			"noise_scale": 0.5,
+			"length_scale": 0.75,
+			"noise_w": 0.5,
+			"sentence_silence": 0.45,
+			"model": 2
+		},
+		{
+			"speaker_id": 9,
+			"noise_scale": 0.8,
+			"length_scale": 0.95,
+			"noise_w": 0.5,
+			"sentence_silence": 0.45,
+			"model": 2
+		},
+		{
+			"speaker_id": 16,
+			"noise_scale": 0.8,
+			"length_scale": 0.9,
+			"noise_w": 0.8,
+			"sentence_silence": 0.5,
+			"model": 2
+		},
+		{
+			"speaker_id": 107,
+			"noise_scale": 0.65,
+			"length_scale": 1.25,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 3
+		},
+		{
+			"speaker_id": 80,
+			"noise_scale": 0.4,
+			"length_scale": 1.0,
+			"noise_w": 0.9,
+			"sentence_silence": 0.4,
+			"model": 3
+		},
+		{
+			"speaker_id": 69,
+			"noise_scale": 0.4,
+			"length_scale": 1.5,
+			"noise_w": 0.75,
+			"sentence_silence": 0.4,
+			"model": 3
+		},
+		{
+			"speaker_id": 0,
+			"noise_scale": 0.7,
+			"length_scale": 0.9,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 4
+		},
+		{
+			"speaker_id": 6,
+			"noise_scale": 0.5,
+			"length_scale": 0.9,
+			"noise_w": 0.5,
+			"sentence_silence": 0.35,
+			"model": 4
+		},
+		{
+			"speaker_id": 80,
+			"noise_scale": 0.4,
+			"length_scale": 1.0,
+			"noise_w": 0.4,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 103,
+			"noise_scale": 0.6,
+			"length_scale": 1.0,
+			"noise_w": 0.6,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 109,
+			"noise_scale": 0.6,
+			"length_scale": 1.0,
+			"noise_w": 0.6,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 111,
+			"noise_scale": 0.3,
+			"length_scale": 1.1,
+			"noise_w": 0.3,
+			"sentence_silence": 0.45,
+			"model": 1
+		},
+		{
+			"speaker_id": 144,
+			"noise_scale": 0.7,
+			"length_scale": 1.15,
+			"noise_w": 0.4,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 172,
+			"noise_scale": 0.3,
+			"length_scale": 1.1,
+			"noise_w": 0.3,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 619,
+			"noise_scale": 0.4,
+			"length_scale": 1.1,
+			"noise_w": 0.35,
+			"sentence_silence": 0.45,
+			"model": 1
 		}
 	],
 
@@ -221,133 +659,408 @@
 			"noise_scale": 0.3,
 			"length_scale": 1.35,
 			"noise_w": 0.12,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 666,
 			"noise_scale": 0.9,
 			"length_scale": 1.1,
 			"noise_w": 0.25,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 50,
 			"noise_scale": 0.2,
 			"length_scale": 1.35,
 			"noise_w": 0.05,
-			"sentence_silence": 0.6
+			"sentence_silence": 0.6,
+			"model": 0
 		},
 		{
 			"speaker_id": 90,
 			"noise_scale": 0.25,
 			"length_scale": 1.3,
 			"noise_w": 0.1,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 92,
 			"noise_scale": 0.33,
 			"length_scale": 1.5,
 			"noise_w": 0.33,
-			"sentence_silence": 0.65
+			"sentence_silence": 0.65,
+			"model": 0
 		},
 		{
 			"speaker_id": 27,
 			"noise_scale": 0.2,
 			"length_scale": 1.4,
 			"noise_w": 0.25,
-			"sentence_silence": 0.55
+			"sentence_silence": 0.55,
+			"model": 0
 		},
 		{
 			"speaker_id": 222,
 			"noise_scale": 0.95,
 			"length_scale": 1.2,
 			"noise_w": 0.5,
-			"sentence_silence": 0.65
+			"sentence_silence": 0.65,
+			"model": 0
 		},
 		{
 			"speaker_id": 782,
 			"noise_scale": 0.4,
 			"length_scale": 1.1,
 			"noise_w": 0.25,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 269,
 			"noise_scale": 0.45,
 			"length_scale": 1.2,
 			"noise_w": 0.25,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 16,
 			"noise_scale": 0.5,
 			"length_scale": 1.37,
 			"noise_w": 0.3,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 413,
 			"noise_scale": 0.6,
 			"length_scale": 0.8,
 			"noise_w": 0.4,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 814,
 			"noise_scale": 0.65,
 			"length_scale": 1.1,
 			"noise_w": 0.4,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 899,
 			"noise_scale": 0.75,
 			"length_scale": 1.1,
 			"noise_w": 0.2,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 200,
 			"noise_scale": 0.6,
 			"length_scale": 1.45,
 			"noise_w": 0.2,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
 		},
 		{
 			"speaker_id": 225,
 			"noise_scale": 0.9,
 			"length_scale": 1.4,
 			"noise_w": 0.2,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 512,
 			"noise_scale": 0.5,
 			"length_scale": 1.1,
 			"noise_w": 0.5,
-			"sentence_silence": 0.4
+			"sentence_silence": 0.4,
+			"model": 0
 		},
 		{
 			"speaker_id": 78,
 			"noise_scale": 0.6,
 			"length_scale": 1.25,
 			"noise_w": 0.2,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 104,
 			"noise_scale": 0.7,
 			"length_scale": 1.3,
 			"noise_w": 0.25,
-			"sentence_silence": 0.5
+			"sentence_silence": 0.5,
+			"model": 0
 		},
 		{
 			"speaker_id": 609,
 			"noise_scale": 0.8,
 			"length_scale": 1,
 			"noise_w": 0.15,
-			"sentence_silence": 0.45
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 900,
+			"noise_scale": 0.25,
+			"length_scale": 1.25,
+			"noise_w": 0.1,
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 812,
+			"noise_scale": 0.4,
+			"length_scale": 1.3,
+			"noise_w": 0.2,
+			"sentence_silence": 0.45,
+			"model": 0
+		},
+		{
+			"speaker_id": 520,
+			"noise_scale": 0.67,
+			"length_scale": 1.5,
+			"noise_w": 0.33,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 406,
+			"noise_scale": 0.2,
+			"length_scale": 1.5,
+			"noise_w": 0.15,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 399,
+			"noise_scale": 0.45,
+			"length_scale": 1.35,
+			"noise_w": 0.3,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 392,
+			"noise_scale": 0.6,
+			"length_scale": 1.25,
+			"noise_w": 0.3,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 805,
+			"noise_scale": 0.4,
+			"length_scale": 1.25,
+			"noise_w": 0.15,
+			"sentence_silence": 0.5,
+			"model": 0
+		},
+		{
+			"speaker_id": 326,
+			"noise_scale": 0.33,
+			"length_scale": 0.97,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 441,
+			"noise_scale": 0.8,
+			"length_scale": 1.0,
+			"noise_w": 0.8,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 901,
+			"noise_scale": 0.25,
+			"length_scale": 1.05,
+			"noise_w": 0.33,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 256,
+			"noise_scale": 0.45,
+			"length_scale": 1.0,
+			"noise_w": 0.9,
+			"sentence_silence": 0.33,
+			"model": 1
+		},
+		{
+			"speaker_id": 297,
+			"noise_scale": 0.5,
+			"length_scale": 1.0,
+			"noise_w": 0.5,
+			"sentence_silence": 0.33,
+			"model": 1
+		},
+		{
+			"speaker_id": 716,
+			"noise_scale": 0.5,
+			"length_scale": 0.9,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 7,
+			"noise_scale": 0.5,
+			"length_scale": 0.95,
+			"noise_w": 0.33,
+			"sentence_silence": 0.45,
+			"model": 1
+		},
+		{
+			"speaker_id": 43,
+			"noise_scale": 0.6,
+			"length_scale": 1.1,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 451,
+			"noise_scale": 0.7,
+			"length_scale": 1.0,
+			"noise_w": 0.5,
+			"sentence_silence": 0.45,
+			"model": 1
+		},
+		{
+			"speaker_id": 3,
+			"noise_scale": 0.5,
+			"length_scale": 0.9,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 2
+		},
+		{
+			"speaker_id": 7,
+			"noise_scale": 0.33,
+			"length_scale": 0.9,
+			"noise_w": 0.7,
+			"sentence_silence": 0.45,
+			"model": 2
+		},
+		{
+			"speaker_id": 10,
+			"noise_scale": 0.5,
+			"length_scale": 1.1,
+			"noise_w": 0.2,
+			"sentence_silence": 0.5,
+			"model": 2
+		},
+		{
+			"speaker_id": 104,
+			"noise_scale": 0.4,
+			"length_scale": 1.0,
+			"noise_w": 0.5,
+			"sentence_silence": 0.5,
+			"model": 3
+		},
+		{
+			"speaker_id": 64,
+			"noise_scale": 0.5,
+			"length_scale": 1.25,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 3
+		},
+		{
+			"speaker_id": 47,
+			"noise_scale": 0.5,
+			"length_scale": 1.2,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 3
+		},
+		{
+			"speaker_id": 1,
+			"noise_scale": 0.7,
+			"length_scale": 0.9,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 4
+		},
+		{
+			"speaker_id": 2,
+			"noise_scale": 0.6,
+			"length_scale": 1.1,
+			"noise_w": 0.5,
+			"sentence_silence": 0.4,
+			"model": 4
+		},
+		{
+			"speaker_id": 3,
+			"noise_scale": 0.33,
+			"length_scale": 0.7,
+			"noise_w": 0.33,
+			"sentence_silence": 0.4,
+			"model": 4
+		},
+		{
+			"speaker_id": 97,
+			"noise_scale": 0.4,
+			"length_scale": 1.0,
+			"noise_w": 0.4,
+			"sentence_silence": 0.4,
+			"model": 1
+		},
+		{
+			"speaker_id": 113,
+			"noise_scale": 0.33,
+			"length_scale": 1.15,
+			"noise_w": 0.2,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 350,
+			"noise_scale": 0.4,
+			"length_scale": 1.2,
+			"noise_w": 0.4,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 430,
+			"noise_scale": 0.33,
+			"length_scale": 1.4,
+			"noise_w": 0.7,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 595,
+			"noise_scale": 0.4,
+			"length_scale": 1.15,
+			"noise_w": 0.35,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 629,
+			"noise_scale": 0.2,
+			"length_scale": 1.2,
+			"noise_w": 0.9,
+			"sentence_silence": 0.5,
+			"model": 1
+		},
+		{
+			"speaker_id": 660,
+			"noise_scale": 0.1,
+			"length_scale": 0.85,
+			"noise_w": 0.9,
+			"sentence_silence": 0.4,
+			"model": 1
 		}
 	]
 }
