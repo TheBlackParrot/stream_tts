@@ -7,6 +7,7 @@ import urllib.parse
 import requests
 import hashlib
 import random
+import string
 from time import time
 from num2words import num2words
 from piper import PiperVoice
@@ -134,7 +135,12 @@ class MyServer(BaseHTTPRequestHandler):
 
                 name_parts_spaced = []
                 for item in name_parts:
-                    name_parts_spaced.append(" ".join(re.split('(?<=.)(?=[A-Z])', item)).lower())
+                    capitals = sum(char in string.ascii_uppercase for char in item)
+                    lowers = sum(char in string.ascii_lowercase for char in item)
+                    if lowers > capitals:
+                        name_parts_spaced.append(" ".join(re.split('(?<=.)(?=[A-Z])', item)).lower())
+                    else:
+                        name_parts_spaced.append(item.lower())
 
                 currentTTSData["say"] = " ".join([str(item) for item in name_parts_spaced])
                 if len(currentTTSData["say"]) <= 3:
