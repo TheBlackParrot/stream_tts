@@ -95,7 +95,7 @@ class MyServer(BaseHTTPRequestHandler):
         _type = path_parts[0].lower()
         _nameCaps = stripNonASCII(urllib.parse.unquote(path_parts[1].split(",")[1]))
         _name = urllib.parse.unquote(path_parts[1].split(",")[0]).lower()
-        _data = " ".join([urllib.parse.unquote(str(item)) for item in path_parts[2:]])
+        _data = stripNonASCII(" ".join([urllib.parse.unquote(str(item)) for item in path_parts[2:]]))
         md5hash = hashlib.md5((_name + _data).encode("utf-8")).hexdigest()
 
         if md5hash in cache:
